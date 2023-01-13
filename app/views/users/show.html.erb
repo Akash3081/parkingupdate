@@ -1,0 +1,29 @@
+<div> 
+<h2>Here is your complete information </h2>
+  <table border="collaspe" cellpadding="8">
+    <thead>
+      <th>Username</th>
+      <th>Name</th>
+      <th>Age </th>
+      <th>Gender </th>
+      <th>Contact </th>
+      <th>Address</th>
+      <th>Department</th>
+    </thead>
+    <tbody>
+      <td><%= @user.username %></td>
+      <td><%= @user.name %></td>
+      <td><%= @user.age %></td>
+      <td><%= @user.gender %></td>
+      <td><%= @user.contact %></td>
+      <td><%= @user.address %></td>
+      <td><%= @user.department %></td>
+    </tbody>
+  </table>
+</div>
+
+<ul>
+  <li><%= link_to "Back to Users", users_path %></li><br>
+    <li><%= link_to "Edit Current User", edit_user_registration_path(@user) %></li><br>
+  <li><%= link_to "Cars", cars_path(@user.id) %></li>
+</ul>

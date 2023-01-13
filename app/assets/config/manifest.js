@@ -1,0 +1,11 @@
+//= require jquery3
+//= require popper
+//= require bootstrap
+//= link application.css
+//= link application.js
+//= link controllers/application.js
+//= link controllers/hello_controller.js
+//= link controllers/index.js
+//= link honda.jpg
+//= link_tree ../../javascript .js
+//= link_tree ../../../vendor/javascript .js
